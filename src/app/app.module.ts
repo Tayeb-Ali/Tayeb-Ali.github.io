@@ -55,7 +55,7 @@ export function HttpLoaderFactory(http: HttpClient) {
 
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     HttpClientModule,
     NgxTypedJsModule,
