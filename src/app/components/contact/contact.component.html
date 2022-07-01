@@ -1,0 +1,93 @@
+<!-- ======= Contact Section ======= -->
+<section id="contact" class="contact">
+  <div class="container" data-aos="fade-up">
+
+    <div class="section-title">
+      <h2>{{"contact.title" | translate}}</h2>
+    </div>
+
+    <div class="row mt-1">
+
+      <div class="col-lg-4">
+        <div class="info">
+          <!--          <div class="address">-->
+          <!--            <i class="bi bi-geo-alt"></i>-->
+          <!--            <h4>Location:</h4>-->
+          <!--            <p>Khartoum, Sudan</p>-->
+          <!--          </div>-->
+
+          <div class="email">
+            <i class="bi bi-envelope"></i>
+            <h4>{{"contact.Email" | translate}}:</h4>
+            <p>Elteyab@smart.sd</p>
+          </div>
+
+          <div class="phone">
+            <i class="bi bi-phone"></i>
+            <h4>{{"contact.Call" |translate}}:</h4>
+            <p>+249 (11) 4847 667</p>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="col-lg-8 mt-5 mt-lg-0">
+
+        <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" role="form" class="php-email-form">
+          <div class="row">
+            <div class="col-md-6 form-group">
+              <input type="text" name="name" class="form-control" id="name" formControlName="name"
+                     placeholder="Your Name" required>
+
+            </div>
+            <div class="col-md-6 form-group mt-3 mt-md-0">
+              <input type="email" class="form-control" name="email" id="email" formControlName="email"
+                     placeholder="Your Email" required>
+
+              <div *ngIf="contactForm.controls['email'].invalid && contactForm.controls['email'].touched"
+                   class="alert alert-danger">
+                <!--                <div *ngIf="contactForm.controls['email'].errors">-->
+                <p *ngIf="contactForm.controls['email'].errors?.['required'] == true">
+                  Email is required.
+                </p>
+                <p *ngIf="contactForm.controls['email'].errors?.['minlength']">
+                  Email minlength must be at least 10 characters.
+                </p>
+                <p *ngIf="contactForm.controls['email'].errors?.['maxlength']">
+                  Email maxlength must be not more than 50 characters.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="form-group mt-3">
+            <input type="text" class="form-control" name="subject" id="subject" formControlName="subject"
+                   placeholder="Subject" required>
+          </div>
+          <div class="form-group mt-3">
+            <textarea class="form-control" name="message" rows="5" formControlName="message" placeholder="Message"
+                      required></textarea>
+          </div>
+
+          <div class="col-sm-12 mb-2">
+            <re-captcha id="recaptcha" name="recaptcha" formControlName="recaptcha" required
+                        [class.is-invalid]="contactForm.controls['recaptcha'].invalid && (contactForm.controls['recaptcha'].dirty || contactForm.controls['recaptcha'].touched)"></re-captcha>
+            <div
+              *ngIf="contactForm.controls['recaptcha'].invalid && (contactForm.controls['recaptcha'].dirty || contactForm.controls['recaptcha'].touched)"
+              class="invalid-feedback">
+              <div *ngIf="contactForm.controls['recaptcha'].errors?.['required']">This field is required.</div>
+            </div>
+          </div>
+
+          <div class="text-center">
+            <button type="submit">{{"contact.Send Message" | translate}}</button>
+          </div>
+        </form>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<!-- End Contact Section -->
