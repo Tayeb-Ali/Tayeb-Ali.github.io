@@ -1,0 +1,110 @@
+{
+  "nav": {
+    "Home": "الرئيسية",
+    "About": "عني",
+    "Resume": "السيرة الذاتية",
+    "Portfolio": "معرض الاعمال",
+    "Services": "الخدمات",
+    "Contact": "الاتصال بي"
+  },
+  "hello": "مرحباً",
+  "Name": "الطيب على حسن",
+  "Title": "العنوان",
+  "about": {
+    "Birthday": "تاريخ الميلاد",
+    "Birthday_text": " 1996 - يونيو -  19 ",
+    "Website": "موقع الكتروني",
+    "Website_url": " https://www.elteyab.sd",
+    "Phone": "رقم الهاتف",
+    "Phone_text": "+249 11 4847 667",
+    "Live": "اعيش في",
+    "Live_text": "دبي - الامارات",
+    "birtCity": "مكان الميلاد",
+    "birtCity_text": "الخرطوم - السودان",
+    "Degree": "شهادة",
+    "Degree_text": "بكلاريوس الشرف في - علوم الحاسب",
+    "contact": "اتصل بي",
+    "contact_text": "Elteyab@smart.sd",
+    "Freelance": "العمل الحر",
+    "Freelance_status": "متاح",
+    "Age": "العمر",
+    "Year": "سنه",
+    "Months": "شهر",
+    "Days": "يوم",
+    "des": "مطور برمجيات ، لأني أعتقد أن خبرتي الكبيرة في (MEAN & Laravel) مع القليل من Asp.Net Core &\n          Java Spring Boot ،\n           فرصة كبيرة لعملك.",
+    "bio": "ليس بالامر الجلل أن تجد محبًا لألعاب الفيديو في منطقتك. منذ تقديم الألعاب الافتراضية ، حققت ارتفاعات كبيرة فيما يتعلق بشعبيتها والتقدم التكنولوجي. إن تاريخ لعبة الفيديو مثير للاهتمام مثل القصص الخيالية."
+  },
+  "home": {
+    "title": "Full Stack Developer.",
+    "des": "  أنا مطور ذو خبرة ولدي خلفية قوية في مجموعة واسعة من جوانب تطوير البرمجيات في سياق تطبيقات الأعمال. تشمل خبرتي جميع مراحل التطوير ، من التحليل و جمع المعلومات إلى التصميم والتنفيذ."
+  },
+  "services": {
+    "title": "",
+    "des": "",
+    "one_title": "",
+    "two_title": "",
+    "three_title": "",
+    "fore_title": "",
+    "one_des": "",
+    "two_des": "",
+    "three_des": "",
+    "fore_des": "",
+    "one_icon": "",
+    "two_icon": "",
+    "three_icon": "",
+    "fore_icon": ""
+  },
+  "facts": {
+    "title": "حقائق",
+    "des": "أنا مطور محترف ورائد أعمال بخبرة تزيد عن 5 سنوات. ينصب تركيزي على التطبيقات على مستوى المؤسسات ، وتخصصت في تقنيات .NET و MEAN. لقد كنت أعمل مع إطار عمل Laravel منذ 3 سنوات و Asp.NET",
+    "one_title": "Web Developer & Design",
+    "two_title": "Mobile Developer & Design",
+    "three_title": "",
+    "fore_title": "",
+    "one_des": "I offer a website development services are on the cutting edge of today’s technologies.Web technologies such as WordPress, Drupal, Magento, Shopify. i custom develop websites and web applications in Python Django, NodeJS, Laravel and .NET Core. i technical wizards mix a potent combination of nerd learning, geek fest participation, spock-like technical brainstorm sessions, and endless hours watching online tech conferences and listening to propeller head podcasts.",
+    "two_des": "I believe i'm the best custom app developer ,i have Experience Work in co-located teams, I'm constantly learning from challenges . I have used Technology like Ionic, React Native, Flutter, or Native way. I care about the beautiful and quiet facade, with a full commitment to complete my work on time.",
+    "three_des": "",
+    "fore_des": "",
+    "one_icon": "",
+    "two_icon": "",
+    "three_icon": "",
+    "fore_icon": "",
+    "Happy_Clients": "العملاء سعداء",
+    "Hours_Support": "ساعات الدعم",
+    "Awards": "جوائز",
+    "Projects": "المشاريع"
+  },
+  "skills": {
+    "title": "المهارات",
+    "des": "أنا مطور حاصل على درجة علمية في علوم الكمبيوتر ولدي مهارة في استخدام كل من MEAN و Laravel. لدي خبرة قليلة في Asp.Net Core و Java ، لكن لدي فهم عميق للغتين."
+  },
+  "lang": {
+    "Arabic": "العربية",
+    "English": "English"
+  },
+  "resume": {
+    "title": "السيرة الذاتية",
+    "des": "أحب إنشاء مواقع الويب والتطبيقات والتصميم. بدأت البرمجة في الصف الثاني عشر ولم أنظر إلى الوراء أبدًا."
+  },
+  "Summary": "ملخص",
+  "Education": "التعليم",
+  "Experience": "الخبرة",
+  "education": {
+    "from": "جامعة المستقبل",
+    "address": "الخرطوم - السودان",
+    "des": "تخرجت من كلية علوم الحاسب جامعة المستقبل في الفترة ما بين 2014-2018 ،\n شاركت في العديد من الأنشطة الداخلية والفعاليات المفتوحة",
+    "training": "الدورات التدريبية",
+    "training_des": "ريادة الأعمال وتطوير البرمجيات",
+    "training_with": "معهد SRM",
+    "training_with2": "مركز ظفر للتدريب"
+  },
+  "Copyright": "حقوق النشر © ",
+  "All Rights Reserved": "جميع الحقوق محفوظة",
+  "contact": {
+    "title": "تواصل معي",
+    "Email": "البريد الإلكتروني",
+    "Call": "الاتصال",
+    "Send Message": "إرسال رسالتك",
+    "Your message has been sent. Thank you!": "تم إرسال رسالتك. شكراً!"
+  }
+}
