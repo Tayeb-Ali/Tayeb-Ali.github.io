@@ -1,0 +1,46 @@
+<i (click)="updateStyle()" class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+
+<!-- ======= Header ======= -->
+<header id="header" class="d-flex flex-column justify-content-center">
+
+  <nav id="navbar" class="navbar nav-menu">
+    <ul>
+      <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i>
+        <span>{{"nav.Home" | translate}}</span></a></li>
+      <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i>
+        <span>{{"nav.About"| translate}}</span></a>
+      </li>
+      <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i>
+        <span>{{"nav.Resume"| translate}}</span></a></li>
+      <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i>
+        <span>{{"nav.Portfolio"| translate}}</span></a>
+      </li>
+      <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i>
+        <span>{{"nav.Services"| translate}}</span></a></li>
+      <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i>
+        <span>{{"nav.Contact"| translate}}</span></a>
+      </li>
+      <li><a (click)="switchLang()" class="nav-link scrollto">
+        <img class="lang" *ngIf="app.translate.currentLang === 'en'" src="assets/img/lang/ar-b.png"
+             alt="translate Flag">
+        <img class="lang" *ngIf="app.translate.currentLang === 'ar'" src="assets/img/lang/1454057-200.png"
+             alt="translate Flag">
+        <span *ngIf="app.translate.currentLang === 'en'">{{"lang.Arabic"| translate}}</span>
+        <span *ngIf="app.translate.currentLang === 'ar'">{{"lang.English"| translate}}</span>
+      </a>
+      </li>
+      <li><a (click)="switchDark()" class="nav-link scrollto">
+        <img class="lang" *ngIf="darkMode === true" src="assets/img/sun.png"
+             alt="dark Mode Switch">
+        <img class="lang" *ngIf="darkMode === false" src="assets/img/moon.png"
+             alt="dark Mode Switch">
+<!--        <span *ngIf="app.translate.currentLang === 'en'">{{"lang.Arabic"| translate}}</span>-->
+<!--        <span *ngIf="app.translate.currentLang === 'ar'">{{"lang.English"| translate}}</span>-->
+      </a>
+      </li>
+    </ul>
+  </nav><!-- .nav-menu -->
+
+</header>
+<!-- End Header -->

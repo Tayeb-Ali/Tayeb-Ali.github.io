@@ -1,0 +1,135 @@
+{
+  "nav": {
+    "Home": "Home",
+    "About": "About",
+    "Resume": "Resume",
+    "Portfolio": "Portfolio",
+    "Services": "Services",
+    "Contact": "Contact"
+  },
+  "hello": "Hello",
+  "Name": "Elteyab Ali Hassan",
+  "Title": "Title",
+  "about": {
+    "Birthday": "Birthday",
+    "Birthday_text": " 1996 - June - 19 ",
+    "Website": "Website",
+    "Website_url": " https://elteyab.sd ",
+    "Phone": "Phone",
+    "Phone_text": " +249 11 4847 667",
+    "Live": "Live",
+    "Live_text": " UAE - Dubai",
+    "birtCity": "Birth City",
+    "birtCity_text": " Khartoum - Sudan",
+    "Degree": "Degree",
+    "Degree_text": " BASc in Computer Science",
+    "contact": "Contact",
+    "contact_text": " Elteyab@smart.sd",
+    "Freelance": "Freelance",
+    "Freelance_status": " Available",
+    "Age": "Age",
+    "Year": "Year",
+    "Months": " Months",
+    "Days": " Days",
+    "des": " Senior Developer as I believe my substantial experience in (MEAN & Laravel) with little in Asp.Net Core &\n          Java Spring Boot,\n          is big opportunity for your work.",
+    "bio": "It won’t be a big problem to find a video game lover in your neighborhood. Since the introduction of Virtual Games, it has been achieving great heights so far as its popularity and technological advancement are concerned. The history of video game is as interesting as a fairy tale."
+  },
+  "home": {
+    "title": "Full Stack Developer.",
+    "des": "  I am an experienced developer with a solid background in a wide range of software development aspects in a\n            business application\n            context. My expertise includes all development stages, from initial analysis through design and execution."
+  },
+  "services": {
+    "title": "Have a Look at my Services",
+    "des": "Who are in extremely love with eco friendly system.",
+    "one_title": "Web Developer & Design",
+    "two_title": "Mobile Developer & Design",
+    "three_title": "",
+    "fore_title": "",
+    "one_des": "I offer a website development services are on the cutting edge of today’s technologies.Web technologies such as WordPress, Drupal, Magento, Shopify. i custom develop websites and web applications in Python Django, NodeJS, Laravel and .NET Core. i technical wizards mix a potent combination of nerd learning, geek fest participation, spock-like technical brainstorm sessions, and endless hours watching online tech conferences and listening to propeller head podcasts.",
+    "two_des": "I believe i'm the best custom app developer ,i have Experience Work in co-located teams, I'm constantly learning from challenges . I have used Technology like Ionic, React Native, Flutter, or Native way. I care about the beautiful and quiet facade, with a full commitment to complete my work on time.",
+    "three_des": "",
+    "fore_des": "",
+    "one_icon": "",
+    "two_icon": "",
+    "three_icon": "",
+    "fore_icon": ""
+  },
+  "facts": {
+    "title": "Facts",
+    "des": "I am a professional developer and entrepreneur with over 5 years of experience. My focus is on enterprise-level applications, specializing in .NET and MEAN technologies. I have been working with Laravel framework for the past 3 years and Asp.NET",
+    "one_title": "Web Developer & Design",
+    "two_title": "Mobile Developer & Design",
+    "three_title": "",
+    "fore_title": "",
+    "one_des": "I offer a website development services are on the cutting edge of today’s technologies.Web technologies such as WordPress, Drupal, Magento, Shopify. i custom develop websites and web applications in Python Django, NodeJS, Laravel and .NET Core. i technical wizards mix a potent combination of nerd learning, geek fest participation, spock-like technical brainstorm sessions, and endless hours watching online tech conferences and listening to propeller head podcasts.",
+    "two_des": "I believe i'm the best custom app developer ,i have Experience Work in co-located teams, I'm constantly learning from challenges . I have used Technology like Ionic, React Native, Flutter, or Native way. I care about the beautiful and quiet facade, with a full commitment to complete my work on time.",
+    "three_des": "",
+    "fore_des": "",
+    "one_icon": "",
+    "two_icon": "",
+    "three_icon": "",
+    "fore_icon": "",
+    "Happy_Clients": "Happy Clients",
+    "Hours_Support": "Hours Of Support",
+    "Awards": "Awards",
+    "Projects": "Projects"
+  },
+  "skills": {
+    "title": "Skills",
+    "des": "I am a developer with a degree in computer Science and I am skilled in the use of both MEAN and Laravel. I have little experience in Asp.Net Core and Java, but I have a deep understanding of the two languages."
+  },
+  "lang": {
+    "Arabic": "العربية",
+    "English": "English"
+  },
+  "resume": {
+    "title": "Resume",
+    "des": "I love creating websites, apps, and designing. I started programming in 12th grade and never looked back."
+  },
+  "Summary": "Summary",
+  "Education": "Education",
+  "Experience": "Experience",
+  "education": {
+    "from": "Future University",
+    "address": "Khartoum - Sudan",
+    "des": "Graduated from the Faculty of Computer Science, Future University, in the period 2014-2018. \n i Participated in it in many internal activities and open events",
+    "training": "Training",
+    "training_des": "ENTREPRENEURSHIP FOR SOFTWARE DEVELOPMENT",
+    "training_with": "SRM INSTITUTE",
+    "training_with2": "SZafar Training Center"
+  },
+  "work": {
+    "Company": "Work",
+    "position1": "Software Engineer",
+    "company1": "Sadad Payment",
+    "location1": "Khartoum - Sudan",
+    "time1": "2017 - 2020",
+    "contact1": "",
+    "position2": "Full Stack Developer",
+    "company2": "Almudaqiq",
+    "location2": "Riyadh, KSA",
+    "time2": "2020 - present",
+    "contact2": "",
+    "position3": "Full Stack Developer",
+    "company3": "Millennium",
+    "time3": "2021 - 2022",
+    "location3": "Riyadh, KSA",
+    "contact3": "",
+    "project3": "",
+    "position4": "Full Stack Developer - Task",
+    "company4": "Smart Team",
+    "time4": "2018 - present",
+    "location4": "Khartoum, Sudan  | Cairo, Egypt",
+    "contact4": ""
+  },
+  "Copyright": "Copyright © ",
+  "All Rights Reserved": "All Rights Reserved",
+
+  "contact": {
+    "title": "Contact",
+    "Email": "Email",
+    "Call": "Call",
+    "Send Message": "Send Message",
+    "Your message has been sent. Thank you!": "Your message has been sent. Thank you!"
+  }
+}
