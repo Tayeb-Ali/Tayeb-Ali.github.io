@@ -1,57 +1,54 @@
-import {Component, OnInit} from '@angular/core';
-import {AppComponent} from "../../app.component";
+import { Component, OnInit, inject, PLATFORM_ID } from '@angular/core';
+import { CommonModule, isPlatformBrowser, DOCUMENT } from '@angular/common';
+import { TranslatePipe } from '@ngx-translate/core';
+import { LanguageService } from '../../language.service';
 
 @Component({
   selector: 'app-header',
+  standalone: true,
+  imports: [CommonModule, TranslatePipe],
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.css']
+  styleUrls: ['./header.component.css'],
 })
 export class HeaderComponent implements OnInit {
   private navIcon = false;
-  lang = 'ar';
   darkMode = false;
 
-  constructor(public app: AppComponent) {
-    this.lang = this.app.translate.currentLang;
+  langService = inject(LanguageService);
+  private platformId = inject(PLATFORM_ID);
+  private doc = inject(DOCUMENT);
+
+  get lang(): string {
+    return this.langService.currentLang;
   }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
-  updateStyle() {
+  updateStyle(): void {
+    if (!isPlatformBrowser(this.platformId)) return;
+    const body = this.doc.getElementsByTagName('body')[0];
     if (this.navIcon) {
-      this.navIcon = false
-      let body = document.getElementsByTagName('body')[0];
-      body.classList.remove('mobile-nav-active')
+      this.navIcon = false;
+      body.classList.remove('mobile-nav-active');
     } else {
-      this.navIcon = true
-      let body = document.getElementsByTagName('body')[0];
+      this.navIcon = true;
       body.classList.add('mobile-nav-active');
     }
   }
 
-  switchLang() {
-    if (this.app.translate.currentLang === 'en') {
-      let body = document.getElementsByTagName('body')[0];
-      body.dir = 'rtl'
-      return this.app.translate.use('ar')
-    } else {
-      let body = document.getElementsByTagName('body')[0];
-      body.dir = 'ltr'
-      return this.app.translate.use('en')
-    }
-
+  switchLang(): void {
+    this.langService.toggle();
   }
 
-  switchDark() {
+  switchDark(): void {
+    if (!isPlatformBrowser(this.platformId)) return;
+    const element = this.doc.body;
     if (this.darkMode) {
-      this.darkMode = false
-      var element = document.body;
-      element.classList.remove("dark-mode");
+      this.darkMode = false;
+      element.classList.remove('dark-mode');
     } else {
-      this.darkMode = true
-      var element = document.body;
-      element.classList.toggle("dark-mode");
+      this.darkMode = true;
+      element.classList.add('dark-mode');
     }
   }
 }

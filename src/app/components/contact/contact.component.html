@@ -69,18 +69,8 @@
                       required></textarea>
           </div>
 
-          <div class="col-sm-12 mb-2">
-            <re-captcha id="recaptcha" name="recaptcha" formControlName="recaptcha" required
-                        [class.is-invalid]="contactForm.controls['recaptcha'].invalid && (contactForm.controls['recaptcha'].dirty || contactForm.controls['recaptcha'].touched)"></re-captcha>
-            <div
-              *ngIf="contactForm.controls['recaptcha'].invalid && (contactForm.controls['recaptcha'].dirty || contactForm.controls['recaptcha'].touched)"
-              class="invalid-feedback">
-              <div *ngIf="contactForm.controls['recaptcha'].errors?.['required']">This field is required.</div>
-            </div>
-          </div>
-
           <div class="text-center">
-            <button type="submit">{{"contact.Send Message" | translate}}</button>
+            <button type="submit" [disabled]="sending">{{"contact.Send Message" | translate}}</button>
           </div>
         </form>
 

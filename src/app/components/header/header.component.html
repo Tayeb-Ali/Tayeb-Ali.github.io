@@ -22,12 +22,12 @@
         <span>{{"nav.Contact"| translate}}</span></a>
       </li>
       <li><a (click)="switchLang()" class="nav-link scrollto">
-        <img class="lang" *ngIf="app.translate.currentLang === 'en'" src="assets/img/lang/ar-b.png"
+        <img class="lang" *ngIf="langService.currentLang === 'en'" src="assets/img/lang/ar-b.png"
              alt="translate Flag">
-        <img class="lang" *ngIf="app.translate.currentLang === 'ar'" src="assets/img/lang/1454057-200.png"
+        <img class="lang" *ngIf="langService.currentLang === 'ar'" src="assets/img/lang/1454057-200.png"
              alt="translate Flag">
-        <span *ngIf="app.translate.currentLang === 'en'">{{"lang.Arabic"| translate}}</span>
-        <span *ngIf="app.translate.currentLang === 'ar'">{{"lang.English"| translate}}</span>
+        <span *ngIf="langService.currentLang === 'en'">{{"lang.Arabic"| translate}}</span>
+        <span *ngIf="langService.currentLang === 'ar'">{{"lang.English"| translate}}</span>
       </a>
       </li>
       <li><a (click)="switchDark()" class="nav-link scrollto">
@@ -35,8 +35,8 @@
              alt="dark Mode Switch">
         <img class="lang" *ngIf="darkMode === false" src="assets/img/moon.png"
              alt="dark Mode Switch">
-<!--        <span *ngIf="app.translate.currentLang === 'en'">{{"lang.Arabic"| translate}}</span>-->
-<!--        <span *ngIf="app.translate.currentLang === 'ar'">{{"lang.English"| translate}}</span>-->
+<!--        <span *ngIf="langService.currentLang === 'en'">{{"lang.Arabic"| translate}}</span>-->
+<!--        <span *ngIf="langService.currentLang === 'ar'">{{"lang.English"| translate}}</span>-->
       </a>
       </li>
     </ul>

@@ -4,11 +4,14 @@
   <div class="container" data-aos="zoom-in" data-aos-delay="100">
     <h1>{{"Name" | translate}}</h1>
     <p>
-      <ngx-typed-js
-        [strings]="['Freelancer.', 'Full Stack Developer.', 'Cryptocurrency trading expert.', 'Expert in creating smart contracts.']"
-        [shuffle]="true" [typeSpeed]="40" [loop]="true">
-        I'm <span class="typing"></span>
-      </ngx-typed-js>
+      I'm
+      <span
+        class="typing"
+        [appTyped]="typedStrings"
+        [typedSpeed]="40"
+        [typedLoop]="true"
+        [typedShuffle]="true"
+      ></span>
     </p>
 
     <div class="social-links">

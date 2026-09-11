@@ -5,7 +5,8 @@
 export const environment = {
   production: false,
   recaptcha: {
-    // siteKey: '6Ld1RbggAAAAABHzY82srvKjIkZFf6JHjX5lG_3m',
+    // TODO: استبدل بمفتاح reCAPTCHA v3 من https://www.google.com/recaptcha/admin
+    // (مفتاح v2 الحالي لا يعمل مع وضع v3 invisible)
     siteKey: '6Ld1RbggAAAAAEEUxRhbrDY82ojPF47G7DAggU4P',
   },
 };
