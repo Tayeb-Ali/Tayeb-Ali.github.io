@@ -1,112 +1,76 @@
-<!-- ======= Resume Section ======= -->
-<section id="resume" class="resume">
-  <div class="container" data-aos="fade-up">
+<section id="resume" class="skeuo">
+  <div class="wrap">
+    <span class="sec-label"><span class="led"></span>MOD.04 // {{ 'resume.title' | translate }}</span>
+    <h2 class="sec-title">{{ 'resume.title' | translate }}</h2>
+    <p class="sec-sub">{{ 'resume.des' | translate }}</p>
 
-    <div class="section-title">
-      <h2>{{"resume.title" | translate}}</h2>
-      <p>{{"resume.des" | translate}}</p>
-    </div>
-
-    <div class="row">
-      <div class="col-lg-6">
-        <h3 class="resume-title">{{"Education" | translate}}</h3>
-        <div class="resume-item pb-0">
-          <h4>{{"about.Degree_text" | translate}}</h4>
-          <p><em>
-            {{"education.des" | translate}}
-          </em>
-          </p>
-          <ul>
-            <li>{{"education.from" | translate}}</li>
-            <li><a href="https://fu.edu.sd/" target="_blank">{{"about.Website" | translate}} - </a></li>
-            <li>{{"education.address" | translate}}</li>
+    <div class="resume-grid">
+      <div>
+        <h3 class="col-title">{{ 'Education' | translate }}</h3>
+        <div class="panel panel-lift r-item">
+          <span class="tag-metal">{{ 'education.from' | translate }}</span>
+          <h4>{{ 'about.Degree_text' | translate }}</h4>
+          <p class="r-em">{{ 'education.des' | translate }}</p>
+          <ul class="r-list">
+            <li><a href="https://fu.edu.sd/" target="_blank">{{ 'about.Website' | translate }}</a></li>
+            <li>{{ 'education.address' | translate }}</li>
           </ul>
         </div>
-
-        <div class="resume-item">
-          <h4>{{"education.training" | translate}}</h4>
-          <p><em>
-            {{"education.training_des" | translate}}
-          </em>
-          </p>
-          <ul>
-            <li>{{"education.training_with" | translate}}</li>
-            <li>{{"education.address" | translate}}</li>
-          </ul>
-          <p><em>
-            {{"education.training_des" | translate}}
-          </em>
-          </p>
-          <ul>
-            <li>{{"education.training_with2" | translate}}</li>
-            <li>{{"education.address" | translate}}</li>
+        <div class="panel panel-lift r-item">
+          <span class="tag-metal">TRN.01</span>
+          <h4>{{ 'education.training' | translate }}</h4>
+          <p class="r-em">{{ 'education.training_des' | translate }}</p>
+          <ul class="r-list">
+            <li>{{ 'education.training_with' | translate }}</li>
+            <li>{{ 'education.training_with2' | translate }}</li>
+            <li>{{ 'education.address' | translate }}</li>
           </ul>
         </div>
-
       </div>
-      <div class="col-lg-6">
-        <h3 class="resume-title">{{"Experience" | translate}}</h3>
-        <div class="resume-item">
-          <h4>{{"work.position1" | translate}}</h4>
-          <h5>{{"work.time1" | translate}}</h5>
-          <h4> {{"work.company1" | translate}}</h4>
-          <p><em>{{"work.location1" | translate}}</em></p>
-          <ul>
-            <b>Achievements/Tasks</b>
-            <li>SadadPay mobile App</li>
-            <li>CBS WebSite</li>
-            <li>CBS Erp System</li>
-            <li>Expo sudan Mobile App</li>
-          </ul>
 
-        </div>
-        <div class="resume-item">
-          <h4>{{"work.position2" | translate}}</h4>
-          <h5>{{"work.time2" | translate}}</h5>
-          <h4> {{"work.company2" | translate}}</h4>
-          <p><em>{{"work.location2" | translate}}</em></p>
-          <ul>
-            <b>Achievements/Tasks</b>
-            <li>work with Team a Almudaqiq to build Erp and
-              Accounting System
-            </li>
+      <div>
+        <h3 class="col-title">{{ 'Experience' | translate }}</h3>
+        <div class="panel panel-lift r-item">
+          <span class="tag-metal">{{ 'work.time1' | translate }}</span>
+          <h4>{{ 'work.position1' | translate }}</h4>
+          <p class="r-em">{{ 'work.company1' | translate }} — {{ 'work.location1' | translate }}</p>
+          <ul class="r-list">
+            <li>SadadPay mobile app</li>
+            <li>CBS website</li>
+            <li>CBS ERP system</li>
+            <li>Expo Sudan mobile app</li>
           </ul>
         </div>
-
-        <div class="resume-item">
-          <h4>{{"work.position3" | translate}}</h4>
-          <h5>{{"work.time3" | translate}}</h5>
-          <h4> {{"work.company3" | translate}}</h4>
-          <p><em>{{"work.location3" | translate}}</em></p>
-          <ul>
-            <b>Achievements/Tasks</b>
-            <li>Taqeem System- I Building a real estate appraisal
-              management system based on the recommendations
-              of the Saudi Authority for Accredited Valuers
-            </li>
+        <div class="panel panel-lift r-item">
+          <span class="tag-metal">{{ 'work.time2' | translate }}</span>
+          <h4>{{ 'work.position2' | translate }}</h4>
+          <p class="r-em">{{ 'work.company2' | translate }} — {{ 'work.location2' | translate }}</p>
+          <ul class="r-list">
+            <li>ERP &amp; accounting system with Almudaqiq team</li>
           </ul>
         </div>
-
-
-        <div class="resume-item">
-          <h4>{{"work.position4" | translate}}</h4>
-          <h5>{{"work.time4" | translate}}</h5>
-          <h4> {{"work.company4" | translate}}</h4>
-          <p><em>{{"work.location4" | translate}}</em></p>
-          <ul>
-            <b>Achievements/Tasks</b>
-            <li> otlub.io pos system link</li>
-            <li> Deta Erp System and website</li>
-            <li> Adaa Full Erp System</li>
-            <li> E-Adaa LMS Backend</li>
-            <li> Adaa qrEMenu System for restaurant</li>
-            <li> Hawjah mobile application for medical personnel link</li>
-
+        <div class="panel panel-lift r-item">
+          <span class="tag-metal">{{ 'work.time3' | translate }}</span>
+          <h4>{{ 'work.position3' | translate }}</h4>
+          <p class="r-em">{{ 'work.company3' | translate }} — {{ 'work.location3' | translate }}</p>
+          <ul class="r-list">
+            <li>Taqeem real-estate appraisal management system</li>
+          </ul>
+        </div>
+        <div class="panel panel-lift r-item">
+          <span class="tag-metal">{{ 'work.time4' | translate }}</span>
+          <h4>{{ 'work.position4' | translate }}</h4>
+          <p class="r-em">{{ 'work.company4' | translate }} — {{ 'work.location4' | translate }}</p>
+          <ul class="r-list">
+            <li>otlub.io POS system</li>
+            <li>Deta ERP system &amp; website</li>
+            <li>Adaa full ERP system</li>
+            <li>E-Adaa LMS backend</li>
+            <li>Adaa qrMenu for restaurants</li>
+            <li>Hawjah medical-staff app</li>
           </ul>
         </div>
       </div>
     </div>
-
   </div>
 </section>
-<!-- End Resume Section -->

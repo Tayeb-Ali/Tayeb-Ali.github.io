@@ -2,6 +2,7 @@ import { Component, OnInit, inject, PLATFORM_ID } from '@angular/core';
 import { CommonModule, isPlatformBrowser, DOCUMENT } from '@angular/common';
 import { TranslatePipe } from '@ngx-translate/core';
 import { LanguageService } from '../../language.service';
+import { ThemeService } from '../../theme.service';
 
 @Component({
   selector: 'app-header',
@@ -15,6 +16,7 @@ export class HeaderComponent implements OnInit {
   darkMode = false;
 
   langService = inject(LanguageService);
+  private theme = inject(ThemeService);
   private platformId = inject(PLATFORM_ID);
   private doc = inject(DOCUMENT);
 
@@ -22,7 +24,9 @@ export class HeaderComponent implements OnInit {
     return this.langService.currentLang;
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.darkMode = this.theme.dark();
+  }
 
   updateStyle(): void {
     if (!isPlatformBrowser(this.platformId)) return;
@@ -42,13 +46,6 @@ export class HeaderComponent implements OnInit {
 
   switchDark(): void {
     if (!isPlatformBrowser(this.platformId)) return;
-    const element = this.doc.body;
-    if (this.darkMode) {
-      this.darkMode = false;
-      element.classList.remove('dark-mode');
-    } else {
-      this.darkMode = true;
-      element.classList.add('dark-mode');
-    }
+    this.darkMode = this.theme.toggle();
   }
 }

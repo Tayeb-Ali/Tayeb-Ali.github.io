@@ -1,83 +1,63 @@
-<!-- ======= Contact Section ======= -->
-<section id="contact" class="contact">
-  <div class="container" data-aos="fade-up">
+<section id="contact" class="skeuo">
+  <div class="wrap">
+    <span class="sec-label"><span class="led"></span>MOD.05 // {{ 'contact.title' | translate }}</span>
+    <h2 class="sec-title">{{ 'contact.title' | translate }}</h2>
 
-    <div class="section-title">
-      <h2>{{"contact.title" | translate}}</h2>
-    </div>
-
-    <div class="row mt-1">
-
-      <div class="col-lg-4">
-        <div class="info">
-          <!--          <div class="address">-->
-          <!--            <i class="bi bi-geo-alt"></i>-->
-          <!--            <h4>Location:</h4>-->
-          <!--            <p>Khartoum, Sudan</p>-->
-          <!--          </div>-->
-
-          <div class="email">
-            <i class="bi bi-envelope"></i>
-            <h4>{{"contact.Email" | translate}}:</h4>
-            <p><a href="Elteyab@smart.sd">Elteyab@smart.sd</a></p>
-          </div>
-
-          <div class="phone">
-            <i class="bi bi-phone"></i>
-            <h4>{{"contact.Call" |translate}}:</h4>
-            <p>+249 (11) 4847 667</p>
-          </div>
-
+    <div class="contact-grid">
+      <div class="panel chan">
+        <span class="housing"><i class="bx bx-envelope"></i></span>
+        <div>
+          <span class="k">{{ 'contact.Email' | translate }}</span>
+          <a href="mailto:Elteyab@smart.sd" class="v">Elteyab@smart.sd</a>
         </div>
-
+      </div>
+      <div class="panel chan">
+        <span class="housing"><i class="bx bx-phone"></i></span>
+        <div>
+          <span class="k">{{ 'contact.Call' | translate }}</span>
+          <a href="tel:+249114847667" class="v mono">+249 (11) 4847 667</a>
+        </div>
       </div>
 
-      <div class="col-lg-8 mt-5 mt-lg-0">
-
-        <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" role="form" class="php-email-form">
-          <div class="row">
-            <div class="col-md-6 form-group">
-              <input type="text" name="name" class="form-control" id="name" formControlName="name"
-                     placeholder="Your Name" required>
-
-            </div>
-            <div class="col-md-6 form-group mt-3 mt-md-0">
-              <input type="email" class="form-control" name="email" id="email" formControlName="email"
-                     placeholder="Your Email" required>
-
-              <div *ngIf="contactForm.controls['email'].invalid && contactForm.controls['email'].touched"
-                   class="alert alert-danger">
-                <!--                <div *ngIf="contactForm.controls['email'].errors">-->
-                <p *ngIf="contactForm.controls['email'].errors?.['required'] == true">
-                  Email is required.
-                </p>
-                <p *ngIf="contactForm.controls['email'].errors?.['minlength']">
-                  Email minlength must be at least 10 characters.
-                </p>
-                <p *ngIf="contactForm.controls['email'].errors?.['maxlength']">
-                  Email maxlength must be not more than 50 characters.
-                </p>
-              </div>
-            </div>
+      <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="panel form-panel">
+        <div class="vents form-vents"><i></i><i></i><i></i></div>
+        <div class="frow">
+          <div class="ffield">
+            <label class="field-label" for="c-name">NAME // 10+ CH</label>
+            <input id="c-name" type="text" class="slot" formControlName="name" placeholder="Your Name" required>
+            <p class="field-error" *ngIf="contactForm.controls['name'].invalid && contactForm.controls['name'].touched">
+              <span *ngIf="contactForm.controls['name'].errors?.['required']">Name is required.</span>
+              <span *ngIf="contactForm.controls['name'].errors?.['minlength']">Name must be at least 10 characters.</span>
+            </p>
           </div>
-          <div class="form-group mt-3">
-            <input type="text" class="form-control" name="subject" id="subject" formControlName="subject"
-                   placeholder="Subject" required>
+          <div class="ffield">
+            <label class="field-label" for="c-email">EMAIL // VALID</label>
+            <input id="c-email" type="email" class="slot" formControlName="email" placeholder="Your Email" required>
+            <p class="field-error" *ngIf="contactForm.controls['email'].invalid && contactForm.controls['email'].touched">
+              <span *ngIf="contactForm.controls['email'].errors?.['required']">Email is required.</span>
+              <span *ngIf="contactForm.controls['email'].errors?.['email']">Enter a valid email.</span>
+            </p>
           </div>
-          <div class="form-group mt-3">
-            <textarea class="form-control" name="message" rows="5" formControlName="message" placeholder="Message"
-                      required></textarea>
-          </div>
-
-          <div class="text-center">
-            <button type="submit" [disabled]="sending">{{"contact.Send Message" | translate}}</button>
-          </div>
-        </form>
-
-      </div>
-
+        </div>
+        <div class="ffield">
+          <label class="field-label" for="c-subject">SUBJECT</label>
+          <input id="c-subject" type="text" class="slot" formControlName="subject" placeholder="Subject" required>
+          <p class="field-error" *ngIf="contactForm.controls['subject'].invalid && contactForm.controls['subject'].touched">
+            Subject is required (10+ characters).
+          </p>
+        </div>
+        <div class="ffield">
+          <label class="field-label" for="c-msg">MESSAGE // 10+ CH</label>
+          <textarea id="c-msg" class="slot" rows="5" formControlName="message" placeholder="Message" required></textarea>
+          <p class="field-error" *ngIf="contactForm.controls['message'].invalid && contactForm.controls['message'].touched">
+            Message is required (10+ characters).
+          </p>
+        </div>
+        <p class="secure-line"><span class="led ok"></span><span>Protected by reCAPTCHA v3 — runs invisibly on send.</span></p>
+        <button type="submit" class="btn btn-accent send" [disabled]="sending">
+          {{ sending ? '···' : ('contact.Send Message' | translate) }}
+        </button>
+      </form>
     </div>
-
   </div>
 </section>
-<!-- End Contact Section -->

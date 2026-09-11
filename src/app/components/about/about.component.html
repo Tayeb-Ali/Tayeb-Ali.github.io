@@ -1,62 +1,49 @@
-<!-- ======= About Section ======= -->
-<section id="about" class="about">
-  <div class="container" data-aos="fade-up">
+<section id="about" class="skeuo">
+  <div class="wrap">
+    <span class="sec-label"><span class="led"></span>MOD.01 // {{ 'nav.About' | translate }}</span>
+    <h2 class="sec-title">{{ 'nav.About' | translate }}</h2>
+    <p class="sec-sub">{{ 'about.des' | translate }}</p>
 
-    <div class="section-title">
-      <h2>{{"nav.About" | translate}}</h2>
-      <p>{{"about.des" | translate}}</p>
-    </div>
-
-    <div class="row">
-      <div class="col-lg-4">
-        <img src="assets/img/about-img.png" class="img-fluid" alt="">
-      </div>
-      <div class="col-lg-8 pt-4 pt-lg-0 content">
-        <h3>{{"home.title" | translate}}</h3>
-        <p class="fst-italic">{{"home.des" | translate}}</p>
-        <div class="row">
-          <div class="col-lg-6">
-            <ul>
-              <li>
-                <i class="bi bi-chevron-right"></i> <strong> &nbsp;{{"about.Birthday" | translate}}:</strong>
-                <span> &nbsp;{{"about.Birthday_text" | translate}} </span></li>
-              <li>
-                <i class="bi bi-chevron-right"></i> <strong>{{"about.Website" | translate}}:</strong>
-                <span> &nbsp;{{"about.Website_url" | translate}}</span>
-              </li>
-              <li>
-                <i class="bi bi-chevron-right"></i> <strong>{{"about.Phone" | translate}}:</strong>
-                <span> &nbsp;{{"about.Phone_text" | translate}}</span></li>
-              <li>
-                <i class="bi bi-chevron-right"></i> <strong>{{"about.Live" | translate}}:</strong>
-                <span> &nbsp;{{"about.Live_text" | translate}}</span>
-              </li>
-              <li>
-                <i class="bi bi-chevron-right"></i> <strong>{{"about.birtCity" | translate}}:</strong>
-                <span> &nbsp;{{"about.birtCity_text" | translate}}</span>
-              </li>
-            </ul>
-          </div>
-          <div class="col-lg-6">
-            <ul>
-              <li><i class="bi bi-chevron-right"></i>
-                <strong>{{"about.Age" | translate}}:</strong>
-                <span> &nbsp;
-                  {{age}} {{"about.Year" | translate}}- {{month}}    {{"about.Months" | translate}}
-                  {{days}}  {{"about.Days" | translate}}</span>
-              </li>
-              <li><i class="bi bi-chevron-right"></i> <strong>{{"about.Degree" | translate}}:</strong>
-                <span> &nbsp;{{"about.Degree_text" | translate}}</span></li>
-              <li><i class="bi bi-chevron-right"></i> <strong>{{"about.contact_text" | translate}}:</strong>
-                <span> &nbsp;{{"about.contact_text" | translate}}</span></li>
-              <li><i class="bi bi-chevron-right"></i> <strong>{{"about.Freelance" | translate}}:</strong>
-                <span> &nbsp;{{"about.Freelance_status" | translate}}</span></li>
-            </ul>
-          </div>
+    <div class="about-grid">
+      <div class="panel panel-lift id-plate">
+        <div class="vents plate-vents"><i></i><i></i><i></i></div>
+        <img src="assets/img/about-img.jpg" alt="Elteyab Hassan portrait" class="id-photo" loading="lazy" decoding="async" width="380" height="380">
+        <div class="id-meta">
+          <span class="tag-metal">ID // {{ age }}Y {{ month }}M {{ days }}D</span>
+          <h3>{{ 'home.title' | translate }}</h3>
+          <p class="id-role">{{ 'home.des' | translate }}</p>
         </div>
-        <p><span class="cot">"</span>{{"about.bio" | translate}}<span class="cot">"</span></p>
+      </div>
+
+      <div class="panel spec">
+        <div class="spec-row">
+          <span class="k">{{ 'about.Birthday' | translate }}</span><span class="v">{{ 'about.Birthday_text' | translate }}</span>
+        </div>
+        <div class="spec-row">
+          <span class="k">{{ 'about.Website' | translate }}</span><span class="v">{{ 'about.Website_url' | translate }}</span>
+        </div>
+        <div class="spec-row">
+          <span class="k">{{ 'about.Phone' | translate }}</span><span class="v">{{ 'about.Phone_text' | translate }}</span>
+        </div>
+        <div class="spec-row">
+          <span class="k">{{ 'about.Live' | translate }}</span><span class="v">{{ 'about.Live_text' | translate }}</span>
+        </div>
+        <div class="spec-row">
+          <span class="k">{{ 'about.birtCity' | translate }}</span><span class="v">{{ 'about.birtCity_text' | translate }}</span>
+        </div>
+        <div class="spec-row">
+          <span class="k">{{ 'about.Age' | translate }}</span>
+          <span class="v">{{ age }} {{ 'about.Year' | translate }} · {{ month }} {{ 'about.Months' | translate }} · {{ days }} {{ 'about.Days' | translate }}</span>
+        </div>
+        <div class="spec-row">
+          <span class="k">{{ 'about.Degree' | translate }}</span><span class="v">{{ 'about.Degree_text' | translate }}</span>
+        </div>
+        <div class="spec-row">
+          <span class="k">{{ 'about.Freelance' | translate }}</span>
+          <span class="v status"><span class="led ok"></span>{{ 'about.Freelance_status' | translate }}</span>
+        </div>
+        <blockquote class="bio"><span class="q">"</span>{{ 'about.bio' | translate }}<span class="q">"</span></blockquote>
       </div>
     </div>
-
   </div>
-</section><!-- End About Section -->
+</section>

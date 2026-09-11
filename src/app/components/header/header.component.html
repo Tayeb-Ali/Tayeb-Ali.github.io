@@ -1,46 +1,36 @@
-<i (click)="updateStyle()" class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+<div class="rail">
+  <a href="#hero" class="rail-logo" aria-label="Home">
+    <span class="led ok"></span>
+    <span class="rail-logo-t">EH<span class="dot">.</span></span>
+  </a>
 
+  <nav class="rail-nav" aria-label="Primary">
+    <a href="#hero" class="rail-key" title="{{ 'nav.Home' | translate }}">
+      <i class="bx bx-home"></i><span>{{ 'nav.Home' | translate }}</span>
+    </a>
+    <a href="#about" class="rail-key" title="{{ 'nav.About' | translate }}">
+      <i class="bx bx-user"></i><span>{{ 'nav.About' | translate }}</span>
+    </a>
+    <a href="#resume" class="rail-key" title="{{ 'nav.Resume' | translate }}">
+      <i class="bx bx-file-blank"></i><span>{{ 'nav.Resume' | translate }}</span>
+    </a>
+    <a href="#contact" class="rail-key" title="{{ 'nav.Contact' | translate }}">
+      <i class="bx bx-envelope"></i><span>{{ 'nav.Contact' | translate }}</span>
+    </a>
+  </nav>
 
-<!-- ======= Header ======= -->
-<header id="header" class="d-flex flex-column justify-content-center">
+  <div class="rail-controls">
+    <button type="button" class="ctl-key ctl-lang" (click)="switchLang()" [title]="langService.currentLang === 'en' ? ('lang.Arabic' | translate) : ('lang.English' | translate)">
+      <span *ngIf="langService.currentLang === 'en'">ع</span>
+      <span *ngIf="langService.currentLang === 'ar'">EN</span>
+    </button>
+    <button type="button" class="ctl-key" (click)="switchDark()" title="Display mode">
+      <i *ngIf="!darkMode" class="bx bx-moon"></i>
+      <i *ngIf="darkMode" class="bx bx-sun"></i>
+    </button>
+  </div>
 
-  <nav id="navbar" class="navbar nav-menu">
-    <ul>
-      <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i>
-        <span>{{"nav.Home" | translate}}</span></a></li>
-      <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i>
-        <span>{{"nav.About"| translate}}</span></a>
-      </li>
-      <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i>
-        <span>{{"nav.Resume"| translate}}</span></a></li>
-      <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i>
-        <span>{{"nav.Portfolio"| translate}}</span></a>
-      </li>
-      <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i>
-        <span>{{"nav.Services"| translate}}</span></a></li>
-      <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i>
-        <span>{{"nav.Contact"| translate}}</span></a>
-      </li>
-      <li><a (click)="switchLang()" class="nav-link scrollto">
-        <img class="lang" *ngIf="langService.currentLang === 'en'" src="assets/img/lang/ar-b.png"
-             alt="translate Flag">
-        <img class="lang" *ngIf="langService.currentLang === 'ar'" src="assets/img/lang/1454057-200.png"
-             alt="translate Flag">
-        <span *ngIf="langService.currentLang === 'en'">{{"lang.Arabic"| translate}}</span>
-        <span *ngIf="langService.currentLang === 'ar'">{{"lang.English"| translate}}</span>
-      </a>
-      </li>
-      <li><a (click)="switchDark()" class="nav-link scrollto">
-        <img class="lang" *ngIf="darkMode === true" src="assets/img/sun.png"
-             alt="dark Mode Switch">
-        <img class="lang" *ngIf="darkMode === false" src="assets/img/moon.png"
-             alt="dark Mode Switch">
-<!--        <span *ngIf="langService.currentLang === 'en'">{{"lang.Arabic"| translate}}</span>-->
-<!--        <span *ngIf="langService.currentLang === 'ar'">{{"lang.English"| translate}}</span>-->
-      </a>
-      </li>
-    </ul>
-  </nav><!-- .nav-menu -->
-
-</header>
-<!-- End Header -->
+  <button type="button" class="rail-burger" (click)="updateStyle()" aria-label="Menu">
+    <i class="bx bx-list-ul"></i>
+  </button>
+</div>

@@ -1,0 +1,10 @@
+/* offset for the fixed control rail */
+.page-body { padding-inline-start: 0; }
+@media (min-width: 901px) {
+  .page-body { padding-inline-start: 92px; }
+}
+/* space for the mobile bottom rail */
+@media (max-width: 900px) {
+  .page-body { padding-block-end: 76px; }
+}
+main { display: block; }

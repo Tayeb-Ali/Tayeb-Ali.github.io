@@ -1,27 +1,55 @@
-
-<!-- ======= Hero Section ======= -->
-<section id="hero" class="d-flex flex-column justify-content-center">
-  <div class="container" data-aos="zoom-in" data-aos-delay="100">
-    <h1>{{"Name" | translate}}</h1>
-    <p>
-      I'm
-      <span
-        class="typing"
-        [appTyped]="typedStrings"
-        [typedSpeed]="40"
-        [typedLoop]="true"
-        [typedShuffle]="true"
-      ></span>
-    </p>
-
-    <div class="social-links">
-      <a target="_blank" href="https://twitter.com/ALtyABOfficial" class="twitter"><i class="bx bxl-twitter"></i></a>
-      <a target="_blank" href="https://github.com/Tayeb-Ali" class="github"><i class="bx bxl-github"></i></a>
-      <!--      <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>-->
-      <!--      <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>-->
-      <a target="_blank" href="https://www.linkedin.com/in/elteyab-hassan/" class="linkedin"><i
-        class="bx bxl-linkedin"></i></a>
+<section id="hero" class="skeuo hero">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <span class="sec-label"><span class="led ok"></span>SYS.OPERATIONAL // {{ 'hello' | translate }}</span>
+      <h1 class="hero-title">{{ 'Name' | translate }}</h1>
+      <p class="hero-role">
+        {{ 'Title' | translate }}<br>
+        <span class="typing-line">I'm
+          <span
+            class="typing"
+            [appTyped]="typedStrings"
+            [typedSpeed]="40"
+            [typedLoop]="true"
+            [typedShuffle]="true"
+          ></span>
+        </span>
+      </p>
+      <div class="hero-cta">
+        <a href="#contact" class="btn btn-accent">{{ 'contact.Send Message' | translate }}</a>
+        <a href="#resume" class="btn btn-chassis">{{ 'nav.Resume' | translate }}</a>
+      </div>
+      <div class="social-links">
+        <a target="_blank" href="https://github.com/Tayeb-Ali" class="soc" aria-label="GitHub"><i class="bx bxl-github"></i></a>
+        <a target="_blank" href="https://www.linkedin.com/in/elteyab-hassan/" class="soc" aria-label="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+      </div>
     </div>
 
+    <div class="device" aria-hidden="true">
+      <div class="device-bezel">
+        <div class="device-screen">
+          <div class="scr-head">
+            <span class="led ok"></span>
+            <span class="scr-title">DEV.CONSOLE</span>
+            <span class="vents"><i></i><i></i><i></i></span>
+          </div>
+          <div class="scr-body">
+            <div class="scr-line"><span class="p">$</span> whoami</div>
+            <div class="scr-line dim">elteyab — full-stack developer</div>
+            <div class="scr-line"><span class="p">$</span> uptime <span class="ok-t">11520h shipped</span></div>
+            <div class="scr-bars">
+              <div class="bar"><i style="width: 92%"></i></div>
+              <div class="bar"><i style="width: 78%"></i></div>
+              <div class="bar"><i style="width: 64%"></i></div>
+            </div>
+            <div class="scr-foot">
+              <span class="spinner"></span>
+              <span>deploying…</span>
+            </div>
+          </div>
+        </div>
+        <span class="device-led"></span>
+      </div>
+    </div>
   </div>
-</section><!-- End Hero -->
+</section>

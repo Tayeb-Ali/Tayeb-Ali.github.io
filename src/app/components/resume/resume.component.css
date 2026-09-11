@@ -1,0 +1,16 @@
+.resume-grid { display: grid; gap: 2rem; margin-top: 2rem; }
+@media (min-width: 1024px) { .resume-grid { grid-template-columns: 1fr 1fr; } }
+.col-title {
+  font-family: var(--font-mono); font-size: .8rem; font-weight: 500;
+  letter-spacing: .1em; text-transform: uppercase; color: var(--ink-muted);
+  margin: 0 0 1rem .2rem; display: flex; align-items: center; gap: .6rem;
+}
+.col-title::after {
+  content: ""; flex: 1; height: 8px; border-radius: 999px;
+  background: var(--bg); box-shadow: var(--shadow-slot);
+}
+.r-item { margin-bottom: 1.4rem; border-inline-start: 4px solid var(--accent); }
+.r-item h4 { margin: .7rem 0 .3rem; font-size: 1.1rem; font-weight: 700; }
+.r-em { color: var(--ink-muted); font-style: italic; margin: 0 0 .6rem; font-size: .95rem; }
+.r-list { margin: 0; padding-inline-start: 1.1rem; display: grid; gap: .3rem; font-size: .95rem; }
+.r-list li::marker { color: var(--accent); }

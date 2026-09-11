@@ -1,0 +1,23 @@
+.contact-grid { display: grid; gap: 1.4rem; margin-top: 2rem; }
+@media (min-width: 1024px) {
+  .contact-grid { grid-template-columns: 1fr 1fr; }
+  .form-panel { grid-column: 1 / -1; }
+}
+.chan { display: flex; align-items: center; gap: 1rem; }
+.chan .k {
+  display: block; font-family: var(--font-mono); font-size: .68rem;
+  letter-spacing: .08em; text-transform: uppercase; color: var(--ink-muted);
+}
+.chan .v { font-weight: 700; font-size: 1.05rem; color: var(--ink); text-decoration: none; }
+.chan a.v:hover { color: var(--accent); }
+.chan .v.mono { font-family: var(--font-mono); font-weight: 500; font-size: 1rem; }
+.form-panel { position: relative; display: grid; gap: 1.1rem; }
+.form-vents { position: absolute; top: 1rem; inset-inline-end: 1.2rem; }
+.frow { display: grid; gap: 1.1rem; }
+@media (min-width: 768px) { .frow { grid-template-columns: 1fr 1fr; } }
+.secure-line {
+  display: flex; align-items: center; gap: .6rem; margin: 0;
+  font-family: var(--font-mono); font-size: .7rem; letter-spacing: .05em; color: var(--ink-muted);
+}
+.send { width: 100%; }
+@media (min-width: 640px) { .send { width: auto; justify-self: start; min-width: 240px; } }
