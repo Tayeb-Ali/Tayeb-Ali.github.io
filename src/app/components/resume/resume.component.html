@@ -4,71 +4,67 @@
     <h2 class="sec-title">{{ 'resume.title' | translate }}</h2>
     <p class="sec-sub">{{ 'resume.des' | translate }}</p>
 
+    <div class="panel panel-lift r-item summary">
+      <span class="tag-metal">{{ 'resume.summaryTitle' | translate }}</span>
+      <p class="r-summary">{{ 'resume.summary' | translate }}</p>
+    </div>
+
     <div class="resume-grid">
       <div>
-        <h3 class="col-title">{{ 'Education' | translate }}</h3>
-        <div class="panel panel-lift r-item">
-          <span class="tag-metal">{{ 'education.from' | translate }}</span>
-          <h4>{{ 'about.Degree_text' | translate }}</h4>
-          <p class="r-em">{{ 'education.des' | translate }}</p>
+        <h3 class="col-title">{{ 'resume.expTitle' | translate }}</h3>
+        <div class="panel panel-lift r-item" *ngFor="let j of jobs$ | async">
+          <span class="tag-metal">{{ j.period }}</span>
+          <h4>{{ j.role }}</h4>
+          <p class="r-em">{{ j.company }} — {{ j.location }}<a *ngIf="j.link" [href]="j.link" target="_blank" rel="noopener" class="r-link" aria-label="Company website"><i class="bx bx-link-external"></i></a></p>
           <ul class="r-list">
-            <li><a href="https://fu.edu.sd/" target="_blank">{{ 'about.Website' | translate }}</a></li>
-            <li>{{ 'education.address' | translate }}</li>
-          </ul>
-        </div>
-        <div class="panel panel-lift r-item">
-          <span class="tag-metal">TRN.01</span>
-          <h4>{{ 'education.training' | translate }}</h4>
-          <p class="r-em">{{ 'education.training_des' | translate }}</p>
-          <ul class="r-list">
-            <li>{{ 'education.training_with' | translate }}</li>
-            <li>{{ 'education.training_with2' | translate }}</li>
-            <li>{{ 'education.address' | translate }}</li>
+            <li *ngFor="let b of j.bullets">{{ b }}</li>
           </ul>
         </div>
       </div>
 
       <div>
-        <h3 class="col-title">{{ 'Experience' | translate }}</h3>
+        <h3 class="col-title">{{ 'resume.eduTitle' | translate }}</h3>
         <div class="panel panel-lift r-item">
-          <span class="tag-metal">{{ 'work.time1' | translate }}</span>
-          <h4>{{ 'work.position1' | translate }}</h4>
-          <p class="r-em">{{ 'work.company1' | translate }} — {{ 'work.location1' | translate }}</p>
+          <span class="tag-metal">{{ 'resume.edu.period' | translate }}</span>
+          <h4>{{ 'resume.edu.degree' | translate }}</h4>
+          <p class="r-em">{{ 'resume.edu.school' | translate }} — {{ 'resume.edu.location' | translate }}<a [href]="'resume.edu.link' | translate" target="_blank" rel="noopener" class="r-link" aria-label="University website"><i class="bx bx-link-external"></i></a></p>
           <ul class="r-list">
-            <li>SadadPay mobile app</li>
-            <li>CBS website</li>
-            <li>CBS ERP system</li>
-            <li>Expo Sudan mobile app</li>
+            <li *ngFor="let h of eduHonors$ | async">{{ h }}</li>
           </ul>
         </div>
+
+        <h3 class="col-title">{{ 'resume.skillsTitle' | translate }}</h3>
+        <div class="panel panel-lift r-item" *ngFor="let g of groups$ | async">
+          <h4 class="r-group">{{ g.name }}</h4>
+          <p class="r-em">{{ g.desc }}</p>
+          <div class="chips">
+            <span class="tag-metal" *ngFor="let it of g.items">{{ it }}</span>
+          </div>
+        </div>
+
+        <h3 class="col-title">{{ 'resume.certTitle' | translate }}</h3>
         <div class="panel panel-lift r-item">
-          <span class="tag-metal">{{ 'work.time2' | translate }}</span>
-          <h4>{{ 'work.position2' | translate }}</h4>
-          <p class="r-em">{{ 'work.company2' | translate }} — {{ 'work.location2' | translate }}</p>
+          <span class="tag-metal">{{ 'resume.cert.period' | translate }}</span>
+          <h4>{{ 'resume.cert.name' | translate }}</h4>
+          <p class="r-em">{{ 'resume.cert.org' | translate }}</p>
+          <p class="r-summary">{{ 'resume.cert.desc' | translate }}</p>
+        </div>
+
+        <h3 class="col-title">{{ 'resume.awardTitle' | translate }}</h3>
+        <div class="panel panel-lift r-item">
+          <span class="tag-metal">{{ 'resume.award.period' | translate }}</span>
+          <h4>{{ 'resume.award.name' | translate }}</h4>
+          <p class="r-em">{{ 'resume.award.org' | translate }}<a [href]="'resume.award.link' | translate" target="_blank" rel="noopener" class="r-link" aria-label="Award reference"><i class="bx bx-link-external"></i></a></p>
           <ul class="r-list">
-            <li>ERP &amp; accounting system with Almudaqiq team</li>
+            <li *ngFor="let a of awardBullets$ | async">{{ a }}</li>
           </ul>
         </div>
+
+        <h3 class="col-title">{{ 'resume.langTitle' | translate }}</h3>
         <div class="panel panel-lift r-item">
-          <span class="tag-metal">{{ 'work.time3' | translate }}</span>
-          <h4>{{ 'work.position3' | translate }}</h4>
-          <p class="r-em">{{ 'work.company3' | translate }} — {{ 'work.location3' | translate }}</p>
-          <ul class="r-list">
-            <li>Taqeem real-estate appraisal management system</li>
-          </ul>
-        </div>
-        <div class="panel panel-lift r-item">
-          <span class="tag-metal">{{ 'work.time4' | translate }}</span>
-          <h4>{{ 'work.position4' | translate }}</h4>
-          <p class="r-em">{{ 'work.company4' | translate }} — {{ 'work.location4' | translate }}</p>
-          <ul class="r-list">
-            <li>otlub.io POS system</li>
-            <li>Deta ERP system &amp; website</li>
-            <li>Adaa full ERP system</li>
-            <li>E-Adaa LMS backend</li>
-            <li>Adaa qrMenu for restaurants</li>
-            <li>Hawjah medical-staff app</li>
-          </ul>
+          <div class="r-kv" *ngFor="let l of langs$ | async">
+            <span>{{ l.name }}</span><em>{{ l.level }}</em>
+          </div>
         </div>
       </div>
     </div>

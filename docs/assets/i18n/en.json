@@ -56,7 +56,7 @@
   },
   "facts": {
     "title": "Facts",
-    "des": "I am a professional developer and entrepreneur with over 5 years of experience. My focus is on enterprise-level applications, specializing in .NET and MEAN technologies. I have been working with Laravel framework for the past 3 years and Asp.NET",
+    "des": "I am a professional developer and entrepreneur with over 7 years of experience. My focus is on enterprise-level applications across fintech, healthcare, and education — from payment gateways and ERP systems to healthcare and learning platforms.",
     "one_title": "Web Developer & Design",
     "two_title": "Mobile Developer & Design",
     "three_title": "",
@@ -84,52 +84,230 @@
   },
   "resume": {
     "title": "Resume",
-    "des": "I love creating websites, apps, and designing. I started programming in 12th grade and never looked back."
+    "des": "7+ years building scalable systems across fintech, healthcare, and education.",
+    "summaryTitle": "Professional Summary",
+    "summary": "Results-driven Software Developer with 7+ years of experience architecting and delivering scalable systems across fintech, healthcare, and education. Proficient in full-stack development using Laravel, Node.js, React, Vue, Flutter, and ASP.NET, with strong expertise in microservices, Docker, Kafka, RabbitMQ, and RESTful APIs. Proven leader — successfully led development teams, launched virtual payment solutions, created a custom Linux distro, and mentored developers. Passionate about leveraging data-driven engineering and open-source innovation to solve real-world challenges.",
+    "expTitle": "Professional Experience",
+    "jobs": [
+      {
+        "period": "April 2022 – Present",
+        "role": "Technical Lead",
+        "company": "Smart Team",
+        "location": "Dubai, UAE",
+        "link": "https://smart.sd",
+        "bullets": [
+          "Currently leading the development team: coordinating tasks and mentoring junior developers.",
+          "Built a healthcare platform to connect patients with providers and an employment portal for job seekers and recruiters.",
+          "Developed educational and retail management systems that streamline content delivery and sales workflows.",
+          "Project manager for ZainCar (Jordan) — full-time remote from Cairo, Oct 2023 – Dec 2025, owning delivery across the ZainCar client and driver apps (zaincar.com).",
+          "In the same period launched the OpenWasit marketplace app (openwasit.com) and the OnRide driver app (onridedrive.com)."
+        ]
+      },
+      {
+        "period": "October 2021 – April 2022",
+        "role": "Full-Stack Developer",
+        "company": "Millennium · Taqdeer",
+        "location": "Saudi Arabia (Remote)",
+        "link": "https://taqdeersa.com/",
+        "bullets": [
+          "Architected multi-tenant solutions for appraisal services, ensuring high availability and security.",
+          "Optimized system performance by refactoring the codebase and introducing microservices patterns.",
+          "Automated deployment pipelines with Docker and GitLab CI, reducing release time by 40%."
+        ]
+      },
+      {
+        "period": "June 2021 – October 2021",
+        "role": "Lead Software Engineer",
+        "company": "EnayaPay",
+        "location": "Khartoum, Sudan",
+        "link": "https://www.enayapay.com/",
+        "bullets": [
+          "Led a cross-functional team to deliver a local & international payment gateway platform.",
+          "Integrated third-party APIs (Stripe, PayPal) and launched virtual Visa/Mastercard issuance.",
+          "Managed project roadmap, sprint planning, and performance reviews to meet all deadlines."
+        ]
+      },
+      {
+        "period": "April 2017 – May 2021",
+        "role": "Software Developer",
+        "company": "Sadad Payment Services",
+        "location": "Khartoum, Sudan",
+        "link": "",
+        "bullets": [
+          "Built high-performance backend systems for banking and government statistics portals.",
+          "Designed & implemented ERP modules, improving operational efficiency by 30%.",
+          "Developed APIs for the government web portal CBS.gov.sd, handling 1M+ monthly transactions.",
+          "Developed RESTful APIs for the Sudanese Islamic Bank mobile application, enabling secure banking operations."
+        ]
+      }
+    ],
+    "eduTitle": "Education",
+    "edu": {
+      "period": "September 2014 – August 2018",
+      "degree": "B.Sc., Computer Science",
+      "school": "Future University",
+      "location": "Khartoum, Sudan",
+      "link": "https://fu.edu.sd",
+      "honors": [
+        "Ranked 2nd in the university's best graduation projects (2018).",
+        "Awarded a training scholarship by the National Software Center (NSC Sudan)."
+      ]
+    },
+    "skillsTitle": "Skills",
+    "skillGroups": [
+      {
+        "name": "Data & Databases",
+        "desc": "Manages structured and unstructured data",
+        "items": [
+          "MongoDB",
+          "MySQL",
+          "PostgreSQL",
+          "SQLite",
+          "MsSQL"
+        ]
+      },
+      {
+        "name": "Tools & Infrastructure",
+        "desc": "Deploys systems and manages integrations",
+        "items": [
+          "Docker",
+          "Git",
+          "CI/CD",
+          "RabbitMQ",
+          "Kafka",
+          "REST APIs"
+        ]
+      },
+      {
+        "name": "Teamwork & Leadership",
+        "desc": "Leads teams and collaborates effectively",
+        "items": [
+          "Leadership",
+          "Collaboration",
+          "Agile",
+          "SCRUM"
+        ]
+      },
+      {
+        "name": "Programming Languages",
+        "desc": "Writes clean and efficient code",
+        "items": [
+          "Python",
+          "JavaScript",
+          "PHP",
+          "TypeScript",
+          "C#"
+        ]
+      }
+    ],
+    "certTitle": "Certifications",
+    "cert": {
+      "period": "December 2018",
+      "name": "Entrepreneurship for Software Development",
+      "org": "Zafar Training Center",
+      "desc": "This intensive program focused on bridging the gap between technical software development and entrepreneurial thinking, including product design, user-centric innovation, and business modeling."
+    },
+    "awardTitle": "Awards",
+    "award": {
+      "period": "December 2018",
+      "name": "NSC Award",
+      "org": "National Software Center",
+      "link": "https://nic.gov.sd/",
+      "bullets": [
+        "For the \"Futsal Finder\" app — 10,000+ downloads.",
+        "500+ daily active groups.",
+        "Facilitated match scheduling and team coordination for local players, addressing a real community need."
+      ]
+    },
+    "langTitle": "Languages",
+    "langs": [
+      {
+        "name": "Arabic",
+        "level": "Native"
+      },
+      {
+        "name": "English",
+        "level": "Professional fluency"
+      }
+    ]
   },
   "Summary": "Summary",
   "Education": "Education",
   "Experience": "Experience",
-  "education": {
-    "from": "Future University",
-    "address": "Khartoum - Sudan",
-    "des": "Graduated from the Faculty of Computer Science, Future University, in the period 2014-2018. \n i Participated in it in many internal activities and open events",
-    "training": "Training",
-    "training_des": "ENTREPRENEURSHIP FOR SOFTWARE DEVELOPMENT",
-    "training_with": "SRM INSTITUTE",
-    "training_with2": "SZafar Training Center"
-  },
-  "work": {
-    "Company": "Work",
-    "position1": "Software Engineer",
-    "company1": "Sadad Payment",
-    "location1": "Khartoum - Sudan",
-    "time1": "2017 - 2020",
-    "contact1": "",
-    "position2": "Full Stack Developer",
-    "company2": "Almudaqiq",
-    "location2": "Riyadh, KSA",
-    "time2": "2020 - present",
-    "contact2": "",
-    "position3": "Full Stack Developer",
-    "company3": "Millennium",
-    "time3": "2021 - 2022",
-    "location3": "Riyadh, KSA",
-    "contact3": "",
-    "project3": "",
-    "position4": "Full Stack Developer - Task",
-    "company4": "Smart Team",
-    "time4": "2018 - present",
-    "location4": "Khartoum, Sudan  | Cairo, Egypt",
-    "contact4": ""
-  },
   "Copyright": "Copyright © ",
   "All Rights Reserved": "All Rights Reserved",
-
   "contact": {
     "title": "Contact",
     "Email": "Email",
     "Call": "Call",
     "Send Message": "Send Message",
     "Your message has been sent. Thank you!": "Your message has been sent. Thank you!"
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "des": "A selection of Android apps I built and shipped — ride-hailing, marketplaces, dev tools, games and more.",
+    "open": "Google Play",
+    "apps": [
+      {
+        "name": "Zain Car — Car Booking App",
+        "tag": "Ride Hailing",
+        "link": "https://play.google.com/store/apps/details?id=com.zaincar.client",
+        "img": "assets/img/portfolio/zaincar-client.png"
+      },
+      {
+        "name": "Zain Ride Car",
+        "tag": "Driver App",
+        "link": "https://play.google.com/store/apps/details?id=com.zaincar.ride",
+        "img": "assets/img/portfolio/zaincar-ride.png"
+      },
+      {
+        "name": "OpenWasit — Arabic Marketplace",
+        "tag": "Marketplace",
+        "link": "https://play.google.com/store/apps/details?id=com.openwasit.users",
+        "img": "assets/img/portfolio/openwasit.png"
+      },
+      {
+        "name": "OnRideDrive",
+        "tag": "Driver App",
+        "link": "https://play.google.com/store/apps/details?id=com.onride.ride",
+        "img": "assets/img/portfolio/onride.png"
+      },
+      {
+        "name": "Nova IDE: Mobile Code Editor",
+        "tag": "Developer Tools",
+        "link": "https://play.google.com/store/apps/details?id=sd.adaa.codeide",
+        "img": "assets/img/portfolio/adaa-codeide.png"
+      },
+      {
+        "name": "Chess Master: Classic Board",
+        "tag": "Games",
+        "link": "https://play.google.com/store/apps/details?id=com.detatech.chess",
+        "img": "assets/img/portfolio/chess.png"
+      },
+      {
+        "name": "FxNavigator",
+        "tag": "Finance",
+        "link": "https://play.google.com/store/apps/details?id=sd.elteyab.fxapp",
+        "img": "assets/img/portfolio/fxapp.png"
+      },
+      {
+        "name": "Muslim Pro: Quran, Azkar, Prayer",
+        "tag": "Islamic · Lifestyle",
+        "link": "https://play.google.com/store/apps/details?id=com.detatech.Azkar",
+        "img": "assets/img/portfolio/azkar.png"
+      },
+      {
+        "name": "MathBrain: Logic & IQ Puzzles",
+        "tag": "Puzzle · Brain Training",
+        "link": "https://play.google.com/store/apps/details?id=sd.x249game.mathbrain",
+        "img": "assets/img/portfolio/mathbrain.png"
+      },
+      {
+        "name": "XO DASH — Glow XO Game",
+        "tag": "Games",
+        "link": "https://play.google.com/store/apps/details?id=sd.x249game.tic",
+        "img": "assets/img/portfolio/xodash.png"
+      }
+    ]
   }
 }

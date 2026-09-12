@@ -1,1 +1,18 @@
-<p>Portfolio Component work</p>
+<section id="portfolio" class="skeuo">
+  <div class="wrap">
+    <span class="sec-label"><span class="led"></span>MOD.05 // {{ 'portfolio.title' | translate }}</span>
+    <h2 class="sec-title">{{ 'portfolio.title' | translate }}</h2>
+    <p class="sec-sub">{{ 'portfolio.des' | translate }}</p>
+
+    <div class="apps">
+      <article class="panel panel-lift app" *ngFor="let a of apps$ | async">
+        <div class="app-shot">
+          <img [src]="a.img" [alt]="a.name + ' app icon'" loading="lazy" decoding="async" width="512" height="512">
+        </div>
+        <span class="tag-metal">{{ a.tag }}</span>
+        <h4>{{ a.name }}</h4>
+        <a class="app-open" [href]="a.link" target="_blank" rel="noopener"><i class="bx bx-link-external"></i>{{ 'portfolio.open' | translate }}</a>
+      </article>
+    </div>
+  </div>
+</section>

@@ -56,7 +56,7 @@
   },
   "facts": {
     "title": "حقائق",
-    "des": "أنا مطور محترف ورائد أعمال بخبرة تزيد عن 5 سنوات. ينصب تركيزي على التطبيقات على مستوى المؤسسات ، وتخصصت في تقنيات .NET و MEAN. لقد كنت أعمل مع إطار عمل Laravel منذ 3 سنوات و Asp.NET",
+    "des": "مطور محترف ورائد أعمال بخبرة تتجاوز 7 سنوات. أركز على تطبيقات المؤسسات في التقنية المالية والرعاية الصحية والتعليم — من بوابات الدفع وأنظمة ERP إلى منصات الرعاية الصحية والتعلم.",
     "one_title": "Web Developer & Design",
     "two_title": "Mobile Developer & Design",
     "three_title": "",
@@ -84,20 +84,156 @@
   },
   "resume": {
     "title": "السيرة الذاتية",
-    "des": "أحب إنشاء مواقع الويب والتطبيقات والتصميم. بدأت البرمجة في الصف الثاني عشر ولم أنظر إلى الوراء أبدًا."
+    "des": "أكثر من 7 سنوات في بناء أنظمة قابلة للتوسع في التقنية المالية والرعاية الصحية والتعليم.",
+    "summaryTitle": "نبذة مهنية",
+    "summary": "مطوّر برمجيات موجّه بالنتائج بخبرة تتجاوز 7 سنوات في تصميم وتسليم أنظمة قابلة للتوسع في قطاعات التقنية المالية والرعاية الصحية والتعليم. متمكن من تطوير الـ Full-Stack باستخدام Laravel وNode.js وReact وVue وFlutter وASP.NET، مع خبرة قوية في الخدمات المصغّرة وDocker وKafka وRabbitMQ وواجهات REST. قائد مُثبت — قدت فرق تطوير بنجاح، وأطلقت حلول دفع افتراضية، وأنشأت توزيعة لينكس مخصصة، ودرّبت مطورين. شغوف بالهندسة المبنية على البيانات والابتكار مفتوح المصدر لحل تحديات العالم الحقيقي.",
+    "expTitle": "الخبرة المهنية",
+    "jobs": [
+      {
+        "period": "أبريل 2022 – الحاضر",
+        "role": "قائد تقني",
+        "company": "Smart Team",
+        "location": "دبي، الإمارات",
+        "link": "https://smart.sd",
+        "bullets": [
+          "أقود حالياً فريق التطوير: تنسيق المهام وتوجيه المطورين المبتدئين.",
+          "بنيت منصة رعاية صحية تربط المرضى بمقدمي الخدمة وبوابة توظيف للباحثين عن عمل وأصحاب العمل.",
+          "طوّرت أنظمة تعليمية وإدارة تجزئة تُبسّط توصيل المحتوى وسير عمليات البيع.",
+          "مدير مشروع ZainCar (الأردن) — دوام كامل عن بُعد من القاهرة، أكتوبر 2023 – ديسمبر 2025، مع ملكية التسليم عبر تطبيقي العميل والسائق (zaincar.com).",
+          "أطلقت في الفترة نفسها تطبيق السوق العربي OpenWasit (openwasit.com) وتطبيق السائق OnRide (onridedrive.com)."
+        ]
+      },
+      {
+        "period": "أكتوبر 2021 – أبريل 2022",
+        "role": "مطور Full-Stack",
+        "company": "Millennium · Taqdeer",
+        "location": "السعودية (عن بُعد)",
+        "link": "https://taqdeersa.com/",
+        "bullets": [
+          "صممت حلولاً متعددة المستأجرين لخدمات التقييم العقاري مع ضمان التوافر العالي والأمان.",
+          "حسّنت أداء النظام بإعادة هيكلة الكود واعتماد أنماط الخدمات المصغّرة.",
+          "أتمتت خطوط النشر بـ Docker وGitLab CI، ما خفّض زمن الإصدار بنسبة 40٪."
+        ]
+      },
+      {
+        "period": "يونيو 2021 – أكتوبر 2021",
+        "role": "مهندس برمجيات أول (Lead)",
+        "company": "EnayaPay",
+        "location": "الخرطوم، السودان",
+        "link": "https://www.enayapay.com/",
+        "bullets": [
+          "قدت فريقاً متعدد التخصصات لتسليم منصة بوابة دفع محلية ودولية.",
+          "دمجت واجهات خارجية (Stripe وPayPal) وأطلقت إصدار بطاقات Visa/Mastercard افتراضية.",
+          "أدرت خارطة الطريق وتخطيط الـ Sprint ومراجعات الأداء للالتزام بكل المواعيد."
+        ]
+      },
+      {
+        "period": "أبريل 2017 – مايو 2021",
+        "role": "مطور برمجيات",
+        "company": "Sadad Payment Services",
+        "location": "الخرطوم، السودان",
+        "link": "",
+        "bullets": [
+          "بنيت أنظمة خلفية عالية الأداء لبوابات البنوك والإحصاءات الحكومية.",
+          "صممت ونفّذت وحدات ERP رفعت الكفاءة التشغيلية بنسبة 30٪.",
+          "طوّرت واجهات البوابة الحكومية CBS.gov.sd التي تخدم أكثر من مليون معاملة شهرياً.",
+          "طوّرت واجهات REST لتطبيق البنك الإسلامي السوداني للجوال لعمليات مصرفية آمنة."
+        ]
+      }
+    ],
+    "eduTitle": "التعليم",
+    "edu": {
+      "period": "سبتمبر 2014 – أغسطس 2018",
+      "degree": "بكالوريوس علوم الحاسب",
+      "school": "جامعة المستقبل",
+      "location": "الخرطوم، السودان",
+      "link": "https://fu.edu.sd",
+      "honors": [
+        "المركز الثاني في أفضل مشاريع التخرج بالجامعة (2018).",
+        "منحة تدريبية من المركز القومي للبرمجيات (NSC السودان)."
+      ]
+    },
+    "skillsTitle": "المهارات",
+    "skillGroups": [
+      {
+        "name": "البيانات وقواعد البيانات",
+        "desc": "إدارة البيانات المنظمة وغير المنظمة",
+        "items": [
+          "MongoDB",
+          "MySQL",
+          "PostgreSQL",
+          "SQLite",
+          "MsSQL"
+        ]
+      },
+      {
+        "name": "الأدوات والبنية التحتية",
+        "desc": "نشر الأنظمة وإدارة التكاملات",
+        "items": [
+          "Docker",
+          "Git",
+          "CI/CD",
+          "RabbitMQ",
+          "Kafka",
+          "REST APIs"
+        ]
+      },
+      {
+        "name": "العمل الجماعي والقيادة",
+        "desc": "قيادة الفرق والتعاون بفاعلية",
+        "items": [
+          "القيادة",
+          "التعاون",
+          "Agile",
+          "SCRUM"
+        ]
+      },
+      {
+        "name": "لغات البرمجة",
+        "desc": "كتابة كود نظيف وفعّال",
+        "items": [
+          "Python",
+          "JavaScript",
+          "PHP",
+          "TypeScript",
+          "C#"
+        ]
+      }
+    ],
+    "certTitle": "الشهادات",
+    "cert": {
+      "period": "ديسمبر 2018",
+      "name": "ريادة الأعمال لتطوير البرمجيات",
+      "org": "مركز ظفر للتدريب",
+      "desc": "برنامج مكثف يردم الفجوة بين التطوير التقني والتفكير الريادي، ويشمل تصميم المنتج والابتكار المتمحور حول المستخدم ونمذجة الأعمال."
+    },
+    "awardTitle": "الجوائز",
+    "award": {
+      "period": "ديسمبر 2018",
+      "name": "جائزة المركز القومي للبرمجيات (NSC)",
+      "org": "NSC السودان",
+      "link": "https://nic.gov.sd/",
+      "bullets": [
+        "عن تطبيق «Futsal Finder» — أكثر من 10,000 تحميل.",
+        "أكثر من 500 مجموعة نشطة يومياً.",
+        "سهّل جدولة المباريات وتنسيق الفرق للاعبين المحليين، ملبّياً حاجة مجتمعية حقيقية."
+      ]
+    },
+    "langTitle": "اللغات",
+    "langs": [
+      {
+        "name": "العربية",
+        "level": "لغة أم"
+      },
+      {
+        "name": "الإنجليزية",
+        "level": "طلاقة مهنية"
+      }
+    ]
   },
   "Summary": "ملخص",
   "Education": "التعليم",
   "Experience": "الخبرة",
-  "education": {
-    "from": "جامعة المستقبل",
-    "address": "الخرطوم - السودان",
-    "des": "تخرجت من كلية علوم الحاسب جامعة المستقبل في الفترة ما بين 2014-2018 ،\n شاركت في العديد من الأنشطة الداخلية والفعاليات المفتوحة",
-    "training": "الدورات التدريبية",
-    "training_des": "ريادة الأعمال وتطوير البرمجيات",
-    "training_with": "معهد SRM",
-    "training_with2": "مركز ظفر للتدريب"
-  },
   "Copyright": "حقوق النشر © ",
   "All Rights Reserved": "جميع الحقوق محفوظة",
   "contact": {
@@ -106,5 +242,72 @@
     "Call": "الاتصال",
     "Send Message": "إرسال رسالتك",
     "Your message has been sent. Thank you!": "تم إرسال رسالتك. شكراً!"
+  },
+  "portfolio": {
+    "title": "معرض الأعمال",
+    "des": "مختارات من تطبيقات أندرويد التي بنيتها وأطلقتها — نقل ذكي وأسواق وأدوات مطورين وألعاب وغيرها.",
+    "open": "جوجل بلاي",
+    "apps": [
+      {
+        "name": "Zain Car — تطبيق حجز السيارات",
+        "tag": "نقل ذكي",
+        "link": "https://play.google.com/store/apps/details?id=com.zaincar.client",
+        "img": "assets/img/portfolio/zaincar-client.png"
+      },
+      {
+        "name": "Zain Ride Car",
+        "tag": "تطبيق السائق",
+        "link": "https://play.google.com/store/apps/details?id=com.zaincar.ride",
+        "img": "assets/img/portfolio/zaincar-ride.png"
+      },
+      {
+        "name": "السوق العربي – OpenWasit",
+        "tag": "سوق إلكتروني",
+        "link": "https://play.google.com/store/apps/details?id=com.openwasit.users",
+        "img": "assets/img/portfolio/openwasit.png"
+      },
+      {
+        "name": "OnRideDrive",
+        "tag": "تطبيق السائق",
+        "link": "https://play.google.com/store/apps/details?id=com.onride.ride",
+        "img": "assets/img/portfolio/onride.png"
+      },
+      {
+        "name": "Nova IDE: محرر أكواد للجوال",
+        "tag": "أدوات المطورين",
+        "link": "https://play.google.com/store/apps/details?id=sd.adaa.codeide",
+        "img": "assets/img/portfolio/adaa-codeide.png"
+      },
+      {
+        "name": "Chess Master: شطرنج كلاسيكي",
+        "tag": "ألعاب",
+        "link": "https://play.google.com/store/apps/details?id=com.detatech.chess",
+        "img": "assets/img/portfolio/chess.png"
+      },
+      {
+        "name": "FxNavigator",
+        "tag": "المال والأعمال",
+        "link": "https://play.google.com/store/apps/details?id=sd.elteyab.fxapp",
+        "img": "assets/img/portfolio/fxapp.png"
+      },
+      {
+        "name": "Muslim Pro: قرآن وأذكار ومواقيت",
+        "tag": "إسلامي · نمط حياة",
+        "link": "https://play.google.com/store/apps/details?id=com.detatech.Azkar",
+        "img": "assets/img/portfolio/azkar.png"
+      },
+      {
+        "name": "MathBrain: ألغاز المنطق والذكاء",
+        "tag": "ألغاز · تدريب العقل",
+        "link": "https://play.google.com/store/apps/details?id=sd.x249game.mathbrain",
+        "img": "assets/img/portfolio/mathbrain.png"
+      },
+      {
+        "name": "XO DASH — لعبة إكس أو المضيئة",
+        "tag": "ألعاب",
+        "link": "https://play.google.com/store/apps/details?id=sd.x249game.tic",
+        "img": "assets/img/portfolio/xodash.png"
+      }
+    ]
   }
 }

@@ -1,18 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { TranslatePipe, TranslateService } from '@ngx-translate/core';
 
 @Component({
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, TranslatePipe],
   selector: 'app-portfolio',
   templateUrl: './portfolio.component.html',
-  styleUrls: ['./portfolio.component.css']
+  styleUrls: ['./portfolio.component.css'],
 })
-export class PortfolioComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+export class PortfolioComponent {
+  private t = inject(TranslateService);
+  apps$ = this.t.stream('portfolio.apps');
 }
